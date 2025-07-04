@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<script src="main.js"></script>
+<body>
+    <div class="txt1">
+    <h2>HAPPY BIRTHDAY !!</h2>
+    <audio autoplay loop>
+        <source src="oMwQStCeBM8oSeAC4KfM8CZT3xEWiTqgCJXPgH.mp3" type="audio/mpeg">
+    </audio>
+    </div>
+    <img class="random-image"src="1536413843489.jpg.jpg" height="200px">
+    <img class="random-image"src="1536413843993.jppg.jpg" height="200px">
+    <img class="random-image"src="1551359223715.jpg.jpg" height="200px">
+    <img class="random-image"src="IMG-20231111-WA0297.jpg" height="200px">
+    <style>
+        body{
+        font-family: 'Quicksand', sans-serif;
+        background-color: rgb(202, 159, 243);
+        }
+
+        .txt1 {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .random-image {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.8s ease;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1.5s ease-out forwards;
+          }
+
+        @keyframes fadeInUp {
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+        }
+
+        .balloon {
+            position: absolute;
+            bottom: -100px;
+            width: 60px;
+            height: 80px;
+            background-color: red;
+            border-radius: 30px 30px 30px 30px;
+            box-shadow: inset -3px -5px 10px rgba(0,0,0,0.2);
+            animation: floatUp 8s linear forwards;
+          }
+      
+          .string {
+            position: absolute;
+            width: 2px;
+            height: 40px;
+            background-color: #444;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+          }
+      
+          @keyframes floatUp {
+            0% {
+              transform: translateY(0) rotate(0deg);
+              opacity: 1;
+            }
+            100% {
+              transform: translateY(-120vh) rotate(20deg);
+              opacity: 0;
+            }
+          }
+    </style>
+</body>
+</html>
